@@ -23,7 +23,7 @@
 <body id="body" class="">
     <header
         class="fixed header border-dark border-b bg-lightSand fixed justify-between flex z-40 h-24 md:h-48 items-center w-full px-6 md:px-24">
-        <a href="/" class="">
+        <a href="#" class="">
             <img src="7705cdca9596524d05bf.png" alt="logo photo" class="logo" />
         </a>
         <ul class="flex">
@@ -35,22 +35,20 @@
                     href="#">Sign-up</a>
             </li>
         </ul>
-       
-            <ul id="cart"
-                class="cart  hidden bg-dark px-5 py-4 text-white z-50 flex flex-col fixed top-40 right-0">
-                <div class="pb-5 mb-14 flex justify-between border-light-sand border-b">
-                    <p>Shopping Cart</p>
-                    <img id="close" class="cursor-pointer w-6 hover:scale-110" src="6bc1b01015367bd5436b.svg" alt="">
+        <ul id="cart"
+            class="cart hidden bg-dark px-5 py-4 text-white z-50 flex text-light-sand font-bold h-screen flex-col fixed top-0 right-0">
+            <div class="pb-5 mb-14 flex justify-between border-light-sand border-b">
+                <p class="text-[24px]">Shopping Cart</p>
+                <img id="close" class="cursor-pointer w-6 hover:scale-110" src="6bc1b01015367bd5436b.svg" alt="">
+            </div>
+            <ul id="cart-items" class="flex gap-10 flex-col"></ul>
+            <div class="text-[14px] pt-8 mt-8 flex justify-between border-t border-light-sand">Total
+                <div class="">
+                    <span class="text-[14px]" id="total">0</span>
+                    <span class="text-[14px]">KR.</span>
                 </div>
-                <ul id="cart-items" class="flex flex-col"></ul>
-                <div class="flex justify-between border-t border-light-sand">Total
-                    <div class="">
-                        <span id="total">0</span>
-                        <span>KR.</span>
-                    </div>
-                </div>
-            </ul>
-      
+            </div>
+        </ul>
     </header>
     <div class="bg-lightSand pb-48">
         <div class="content px-6 md:px-24 container mx-auto">
@@ -151,7 +149,7 @@
                     <img src="9c18e912024d2017ee20.png" alt="logo" class="footer__logo" />
                 </a>
             </div>
- 
+
         </div>
     </footer>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
