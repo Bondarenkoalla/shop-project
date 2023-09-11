@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 list.addEventListener("click", function (event) {
   if (event.target.classList.contains("add-to-cart")) {
+    cart.classList.remove('hidden')
     const price = parseFloat(event.target.getAttribute("data-price"));
     const imageSrc = event.target.getAttribute("data-image");
     const title = event.target.getAttribute("data-title");
