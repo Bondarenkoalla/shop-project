@@ -1,0 +1,40 @@
+.content {
+  padding-top: 193px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a,
+button {
+  transition: all 300ms;
+  text-decoration: none;
+
+  &:hover {}
+
+  &:active {}
+
+  &:disabled,
+  &_disabled {
+    pointer-events: none;
+    text-decoration: none;
+  }
+}
+
+.logo {
+  @media screen and (max-width: 768px) {
+    max-width: 134px;
+  }
+}
+
+.cart {
+  min-width: 445px;
+}
