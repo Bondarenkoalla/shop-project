@@ -82,8 +82,8 @@ function updateCart() {
 
         cartItemsList.appendChild(li);
 
-        image.classList = 'w-[74px] h-[74px] mb-10 row-span-3'
-        li.classList = "grid grid-rows-3 grid-cols-3 grid-flow-col gap-4"
+        image.classList = 'rounded w-[74px] row-span-3'
+        li.classList = "grid h-[74px] grid-rows-3 grid-cols-3 grid-flow-col gap-4"
         price.classList = "col-span-2"
         title.classList = "col-span-2"
         div.classList = "col-span-1 flex items-center"
