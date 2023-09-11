@@ -1,6 +1,6 @@
 {{#each products as |product| }}
 {{#if product.images.[0].src }}
-<li class="relative relative menu__item h-full flex flex-col justify-evenly"  data-aos="fade-down" 
+<li class="font-['Space_Grotesk'] relative relative menu__item h-full flex flex-col justify-evenly"  data-aos="fade-down" 
                                 data-aos-delay="100">
     <img src="{{product.images.[0].src}}" alt="{{product.title}}" />
     <span class="absolute top-3 left-3 uppercase text-white p-1 rounded bg-dark">used</span>
@@ -15,7 +15,7 @@
         {{/if}}
         <p class="text-[14px] ">Slightly used</p>
     </div>
-    <button data-image="{{product.images.[0].src}}" data-title="{{product.title}}" data-price="{{product.variants.[0].price}}" class="add-to-cart bg-dark text-white p-3 hover:bg-white hover:text-dark w-full">ADD TO CART</button>
+    <button data-image="{{product.images.[0].src}}" data-title="{{product.title}}" data-price="{{product.variants.[0].price}}" class="text-[14px] add-to-cart bg-dark text-white p-3 hover:bg-white hover:text-dark w-full">ADD TO CART</button>
 </li>
 {{/if}}
 {{/each}}
