@@ -41,6 +41,8 @@ function updateCart() {
         const decrementButton = document.createElement("button");
         const deleteButton = document.createElement("div");
 
+        const div = document.createElement("div");
+
         image.src = item.imageSrc;
         image.alt = item.title;
         title.textContent = item.title;
@@ -48,7 +50,6 @@ function updateCart() {
         quantity.textContent = item.quantity;
         incrementButton.textContent = "+";
         decrementButton.textContent = "-";
-        deleteButton.textContent = "delete";
 
         incrementButton.addEventListener("click", () => {
             item.quantity += 1;
@@ -77,21 +78,25 @@ function updateCart() {
 
         li.appendChild(image);
         li.appendChild(title);
-        li.appendChild(price);
-        li.appendChild(decrementButton);
-        li.appendChild(quantity);
-        li.appendChild(incrementButton);
+        li.appendChild(price);    
+        li.appendChild(div);        
+        div.appendChild(decrementButton);
+        div.appendChild(quantity);
+        div.appendChild(incrementButton);
         li.appendChild(deleteButton);
+
         cartItemsList.appendChild(li);
 
-        image.classList = 'mb-10 w-32 row-span-3'
-        li.classList="grid grid-rows-3 grid-cols-5 grid-flow-col gap-4"
+        image.classList = 'w-[74px] h-[74px] mb-10 row-span-3'
+        li.classList="grid grid-rows-3 grid-cols-3 grid-flow-col gap-4"
         price.classList="col-span-2"
         title.classList="col-span-2"
-        incrementButton.classList="col-span-1"
-        quantity.classList="col-span-1"
-        decrementButton.classList="col-span-1 row-start-3"
-        deleteButton.classList="col-span-2"
+        div.classList="col-span-1 flex items-center"
+        incrementButton.classList="p-1"
+        quantity.classList="p-1"
+        decrementButton.classList="p-1"
+        deleteButton.classList="hover:scale-110 cursor-pointer col-start-4 button-delete justify-self-end"
+
         const itemTotal = item.price * item.quantity;
         cartTotal += itemTotal;
     });

@@ -35,6 +35,18 @@ button {
   }
 }
 
+.button-delete {
+  background-image: url(../images/delete.svg);
+  background-position: center;
+  width: 20px;
+  height: 20px;
+}
+
 .cart {
-  min-width: 445px;
+  min-width: 491px;
+
+  @media screen and (max-width: 768px) {
+    min-width: initial;
+    width: 100%;
+  }
 }

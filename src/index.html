@@ -23,7 +23,7 @@
 <body id="body" class="">
     <header
         class="fixed header border-dark border-b bg-lightSand fixed justify-between flex z-40 h-24 md:h-48 items-center w-full px-6 md:px-24">
-        <a href="/" class="">
+        <a href="#" class="">
             <img src="./images/logo.png" alt="logo photo" class="logo" />
         </a>
         <ul class="flex">
@@ -37,16 +37,16 @@
         </ul>
        
             <ul id="cart"
-                class="cart  hidden bg-dark px-5 py-4 text-white z-50 flex flex-col fixed top-40 right-0">
+                class="cart hidden bg-dark px-5 py-4 text-white z-50 flex text-light-sand font-bold h-screen flex-col fixed top-0 right-0">
                 <div class="pb-5 mb-14 flex justify-between border-light-sand border-b">
-                    <p>Shopping Cart</p>
+                    <p class="text-[24px]">Shopping Cart</p>
                     <img id="close" class="cursor-pointer w-6 hover:scale-110" src="./images/close.svg" alt="">
                 </div>
-                <ul id="cart-items" class="flex flex-col"></ul>
-                <div class="flex justify-between border-t border-light-sand">Total
+                <ul id="cart-items" class="flex gap-10 flex-col"></ul>
+                <div class="text-[14px] pt-8 mt-8 flex justify-between border-t border-light-sand">Total
                     <div class="">
-                        <span id="total">0</span>
-                        <span>KR.</span>
+                        <span class="text-[14px]" id="total">0</span>
+                        <span class="text-[14px]">KR.</span>
                     </div>
                 </div>
             </ul>
