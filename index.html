@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1">
+    <title>VooDoo</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="apple-touch-icon" sizes="76x76" href="0b32034dfbfe681c8593.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="015d2aabe5e329d12a6f.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="62d4714027d1dfb17af0.png">
+    <link rel="manifest" href="efb980dee947069bbb14.webmanifest">
+    <link rel="mask-icon" href="588d8bcf4acc85c67b32.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+<script defer src="bundle.js"></script></head>
+
+<body id="body" class="">
+    <header
+        class="fixed header border-dark border-b bg-lightSand fixed justify-between flex z-40 h-24 md:h-48 items-center w-full px-6 md:px-24">
+        <a href="/" class="">
+            <img src="7705cdca9596524d05bf.png" alt="logo photo" class="logo" />
+        </a>
+        <ul class="flex">
+            <li class="mr-4 flex items-center">
+                <button id="cart-opener" class="hover:scale-110" href=""><img src="01e3468810dc5950af05.svg" alt=""></button>
+            </li>
+            <li class="">
+                <button class="bg-dark text-white px-3 py-1 rounded-md hover:bg-white hover:text-dark"
+                    href="#">Sign-up</a>
+            </li>
+        </ul>
+       
+            <ul id="cart"
+                class="cart  hidden bg-dark px-5 py-4 text-white z-50 flex flex-col fixed top-40 right-0">
+                <div class="pb-5 mb-14 flex justify-between border-light-sand border-b">
+                    <p>Shopping Cart</p>
+                    <img id="close" class="cursor-pointer w-6 hover:scale-110" src="6bc1b01015367bd5436b.svg" alt="">
+                </div>
+                <ul id="cart-items" class="flex flex-col"></ul>
+                <div class="flex justify-between border-t border-light-sand">Total
+                    <div class="">
+                        <span id="total">0</span>
+                        <span>KR.</span>
+                    </div>
+                </div>
+            </ul>
+      
+    </header>
+    <div class="bg-lightSand pb-48">
+        <div class="content px-6 md:px-24 container mx-auto">
+            <div class="bg-dark mb-12 mt-24">
+                <div id="info-container" class="p-6 cursor-pointer flex justify-between">
+                    <div class="flex">
+                        <p class=" flex text-lightSand mr-8"><img class="mr-2" src="a8d055cbfc1ba9fb4952.svg"
+                                alt="">ALPHA
+                        </p>
+                        <p class="text-lightSand">Important info regarding our service</p>
+                    </div>
+                    <button id="arrow-button"> <img src="371f3ca92c0da6b9bf22.svg" alt=""></button>
+                </div>
+                <div id="info" class="hidden p-6">
+                    <p class="text-lightSand">By submitting an order through our shop you are making an offer to order
+                        or buy the
+                        selected products. Confirmation of receipt of your order will be done by our shop via
+                        email, within 24 hours of purchase. No contractual obligations will arise until your offer is
+                        confirmed to you by our shop. If you do not receive confirmation of your order, please
+                        contact us through our Contact us form.</p>
+                </div>
+            </div>
+            <div class="justify-center mb-16">
+                <ul class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4" id="list"></ul>
+            </div>
+            <div id="pagination" class="flex justify-center gap-2.5">
+            </div>
+        </div>
+    </div>
+    <footer class="footer px-6 md:px-24 py-20 bg-white">
+        <div class="container ">
+            <div class="grid gap-y-12 md:gap-y-1 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                <a href="" class="footer__logo hidden md:block">
+                    <img src="9c18e912024d2017ee20.png" alt="logo" class="footer__logo" />
+                </a>
+                <ul class="">
+                    <li class="hover:underline mb-5 font-bold text-[14px]">
+                        <a class="" href="">
+                            FAQ
+                        </a>
+                    </li>
+                    <li class="hover:underline mb-5 font-bold text-[14px]">
+                        <a class="" href="">
+                            RETURNS
+                        </a>
+                    </li>
+                    <li class="hover:underline mb-5 font-bold text-[14px]">
+                        <a class="" href="">
+                            CONTACT
+                        </a>
+                    </li>
+                </ul>
+                <ul class="">
+                    <li class="hover:underline mb-5 font-bold text-[14px]">
+                        <a class="" href="">
+                            TERMS & CONDITIONS
+                        </a>
+                    </li>
+                    <li class="hover:underline mb-5 font-bold text-[14px]">
+                        <a class="" href="">
+                            PRIVACY POLICY
+                        </a>
+                    </li>
+                    <li class="hover:underline mb-5 font-bold text-[14px]">
+                        <a class="" href="">
+                            COOKIE POLICY
+                        </a>
+                    </li>
+                    <li class="hover:underline mb-5 font-bold text-[14px]">
+                        <a class="" href="">
+                            COOKIE SETTINGS
+                        </a>
+                    </li>
+                </ul>
+                <ul class="">
+                    <li class="hover:underline mb-5 font-bold text-[14px]">
+                        <a class="" href="">
+                            ABOUT SECOND CHANCE
+                        </a>
+                    </li>
+                    <li class="hover:underline mb-5 font-bold text-[14px]">
+                        <a class="" href="">
+                            CAREER
+                        </a>
+                    </li>
+                    <li class="hover:underline mb-5 font-bold text-[14px] ">
+                        <a class="" href="">
+                            FACEBOOK
+                        </a>
+                    </li>
+                    <li class="hover:underline mb-5 font-bold text-[14px]">
+                        <a class="" href="">
+                            INSTAGRAM
+                        </a>
+                    </li>
+                </ul>
+                <a href="" class="block md:hidden">
+                    <img src="9c18e912024d2017ee20.png" alt="logo" class="footer__logo" />
+                </a>
+            </div>
+ 
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+</body>
+
+</html>
